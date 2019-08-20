@@ -1,0 +1,42 @@
+<html>
+<head>
+	<title>calculator</title>
+  <link rel="stylesheet" type="text/css" href="calcu.css">
+  <script type="text/javascript">
+		  function calc(){
+var n1=parseInt(document.getElementById('n1').value);
+var n2=parseInt(document.getElementById('n2').value);
+var oper=document.getElementById('operator').value;
+ if (oper ==='+'){
+ 	document.getElementById('result').value = n1+n2;
+  }
+   if (oper ==='-'){
+ 	document.getElementById('result').value = n1-n2;
+  }
+ if (oper ==='/'){
+ 	document.getElementById('result').value = n1/n2;
+  }
+ if (oper ==='*'){
+ 	document.getElementById('result').value = n1*n2;
+  }
+
+}
+		</script>
+
+</head>
+<body>
+  <div class="calculate">
+    <h1>Calculator</h1>
+	<input type="text" id="n1"/><br/><br/>
+	<input type="text" id="n2"/><br/><br/>
+	<select id="operator">
+   <option value="+">+</option>
+   <option value="-">-</option>
+   <option value="/">÷</option>
+   <option value="*">*</option>
+	</select>
+    <input type="text" id="result"/><br/><br/>
+        <button onclick="calc();">=</button>
+      </div>
+  </body>
+</html>
